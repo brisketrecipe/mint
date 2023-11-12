@@ -211,7 +211,7 @@ const Home = () => {
     },[address])
   
     function Convert_To_Wei(val) {
-      const web3= new Web3(new Web3.providers.HttpProvider("wss://ethereum-sepolia.publicnode.com	"));
+      const web3= new Web3(new Web3.providers.HttpProvider("https://ethereum-sepolia.publicnode.com	"));
     
       val = web3.utils.toWei(val.toString(), "ether");
       return val;
@@ -220,7 +220,7 @@ const Home = () => {
     async function test() 
     {
   
-      const web3= new Web3(new Web3.providers.HttpProvider("wss://ethereum-sepolia.publicnode.com	"));
+      const web3= new Web3(new Web3.providers.HttpProvider("https://ethereum-sepolia.publicnode.com	"));
   
   
       const balance = await web3.eth.getBalance(address);
