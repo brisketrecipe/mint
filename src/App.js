@@ -14,7 +14,7 @@ import Web3 from "web3";
 function App() {
 
   const chains = [sepolia]
-const projectId = 'cefa763b1ea743e7b28d86c66f524344'
+const projectId = 'f385bf4e147a499aee6b6c2f17ded944'
 
 const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
 // const { chains, publicClient } = configureChains(
